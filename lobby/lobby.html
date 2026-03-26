@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>InvestHub</title>
+    <link rel="icon" type="image/png" href="../assets/image.png" />
+  </head>
+  <body class="bg-[#191919] h-screen overflow-hidden">
+    <header>
+      <div id="indicator" class="absolute top-5 left-[28px] w-17 h-10 bg-[#DFDC29] rounded-xl -z-1 transition-all duration-300 ease-in-out"></div>
+      <nav>
+        <div class="relative flex justify-between border-b-2 border-b-white pl-[50px] pr-[50px] h-[80px]">
+          <div class="flex flex-row text-white align-middle justify-center items-center gap-[60px]">
+            <i data-feather="home" class="cursor-pointer text-[#191919] duration-300 ease-in-out" onclick="window.alert('Untuk menggunakan fitur ini, anda harus Daftar atau Login Terlebih Dahulu')"></i>
+            <i data-feather="shopping-cart" class="cursor-pointer duration-300 ease-in-out" onclick="window.alert('Untuk menggunakan fitur ini, anda harus Daftar atau Login Terlebih Dahulu')"></i>
+            <i data-feather="monitor" class="cursor-pointer duration-300 ease-in-out" onclick="window.alert('Untuk menggunakan fitur ini, anda harus Daftar atau Login Terlebih Dahulu')"></i>
+            <i data-feather="book" class="cursor-pointer duration-300 ease-in-out" onclick="window.alert('Untuk menggunakan fitur ini, anda harus Daftar atau Login Terlebih Dahulu')"></i>
+          </div>
+          <div class="text-[#DFDC29] text-[35px] items-center justify-center text-center align-middle">
+            <h2 class="mt-[10px] font-bold absolute left-1/2 transform -translate-x-1/2">InvestHub</h2>
+          </div>
+          <div class="flex flex-row text-white items-center justify-center gap-[40px]">
+            <button class="font-semibold cursor-pointer bg-[#DFDC29] text-[#191919] p-[5px] rounded-[10px] w-[100px] duration-300 ease-in-out hover:bg-white active:bg-[#DFDC29]" onclick="window.location.href= '../login/login.html'">Masuk</button>
+            <button class="font-semibold cursor-pointer bg-[#DFDC29] text-[#191919] p-[5px] rounded-[10px] w-[100px] duration-300 ease-in-out hover:bg-white active:bg-[#DFDC29]" onclick="window.location.href= '../regist/regist.html'">Daftar</button>
+            <i data-feather="bell" class="cursor-pointer" onclick="window.alert('Untuk menggunakan fitur ini, anda harus Daftar atau Login Terlebih Dahulu')"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="flex flex-col justify-center items-center align-middle mt-[170px]">
+        <h2 class="text-white text-[35px] font-semibold text-center items-center justify-center align-middle">Pengumuman<br> Mohon Maaf, Situs ini sedang dalam pengerjaan.<br>Untuk sementara, anda dapat mencoba fitur login/daftar.<br>Jangan khawatir, proyek ini akan diselesaikan secepatnya.<br>Terimakasih atas kesabaran dan perhatiannya</h2> <br>
+        <h4 class="text-[#DFDC29] text-[20px] font-semibold text-center items-center justify-center align-middle">~InvestHub Dev.~</h4>
+      </div>
+    </main>
+    <script>
+      feather.replace();
+    </script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

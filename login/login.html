@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Masuk Ke InvestHub</title>
+    <link rel="icon" type="image/png" href="../assets/image.png" />
+  </head>
+  <body class="h-screen overflow-hidden bg-[#191919]">
+    <div class="flex flex-row cursor-pointer items-center justify-center gap-[10px] mt-[45px] mr-[1300px]" onclick="window.location.href= '../lobby/lobby.html'">
+      <i data-feather="arrow-left" class="text-white w-[40px] h-[40px]"></i>
+      <h2 class="text-white text-[20px] font-semibold text-center items-center justify-center align-middle">Kembali</h2>
+    </div>
+    <div class="flex flex-row items-center align-middle justify-between pl-[170px] pr-[170px] mt-[100px]">
+      <div>
+        <img src="../assets/image.png" alt="" class="w-[280px]">
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col">
+          <h2 class="text-white text-[25px] font-bold text-center">Masuk Ke InvestHub</h2> <br>
+          <label for="username" class="ml-[10px] mb-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Email atau Nomor Telepon</label>
+          <input type="text" id="username" required placeholder="Masukan Email/Nomor Telepon Anda" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+          <label for="password" class="ml-[10px] mb-[10px] mt-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Password</label>
+          <input type="password" id="password" required placeholder="Masukan Password Anda" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+          <a href="../forgot/forgot.html" class="text-white/70 text-[17px] font-semibold ml-[420px] mt-[5px] mb-[5px]">Lupa Password?</a>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-[11px]">
+          <div class="flex flex-row items-center justify-center">
+            <hr class="border-white/60 border-[1.5px] w-[550px]"> 
+            <h2 class="absolute text-white text-[15px] rounded-[10px] font-semibold text-center -pt-[2px] -pb-[2px] bg-[#191919] px-[10px] items-center justify-center align-middle">Atau</h2>
+          </div>
+          <div class="flex flex-row justify-between mt-[12px] w-[450px] mb-[25px]">
+            <i data-feather="mail" class="cursor-pointer bg-white text-[#191919] hover:bg-[#DFDC29] active:bg-white duration-300 ease-in-out w-[170px] h-[40px] rounded-[10px] p-[5px]"></i>
+            <i data-feather="facebook" class="cursor-pointer bg-white text-[#191919] hover:bg-[#DFDC29] active:bg-white duration-300 ease-in-out w-[170px] h-[40px] rounded-[10px] p-[5px]"></i>
+          </div>
+        </div>
+        <div class="flex flex-row items-center justify-center">
+          <button class="font-bold cursor-pointer bg-white text-[#191919] p-[5px] rounded-[50px] w-[250px] h-[45px] duration-300 ease-in-out hover:bg-[#DFDC29] active:bg-white" onclick=login()>Masuk</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

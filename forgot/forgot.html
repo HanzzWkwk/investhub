@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Lupa Password</title>
+    <link rel="icon" type="image/png" href="../assets/image.png" />
+</head>
+<body class="bg-[#191919] h-screen overflow-hidden">
+    <div class="flex flex-row cursor-pointer items-center justify-center gap-[10px] mt-[45px] mr-[1300px]" onclick="window.location.href= '../login/login.html'">
+      <i data-feather="arrow-left" class="text-white w-[40px] h-[40px]"></i>
+      <h2 class="text-white text-[20px] font-semibold text-center items-center justify-center align-middle">Kembali</h2>
+    </div>
+    <div class="flex flex-row justify-between items-center pl-[170px] pr-[170px] mt-[58px]">
+      <div>
+        <img src="../assets/image.png" alt="" class="w-[280px]">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-[#DFDC29] text-[20px] font-semibold text-center items-center justify-center align-middle">Atur ulang password anda</h2> <br>
+        <div class="flex flex-row justify-between align-middle items-center mr-[10px]">
+          <label for="email" class="ml-[10px] mb-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Email atau Nomor Telepon</label>
+          <button class="cursor-pointer font-semibold text-white p-[5px] rounded-[50px] duration-300 ease-in-out hover:text-[#DFDC29] active:text-white mb-[5px]">Kirim kode</button>
+        </div>
+        <input type="text" id="email" required placeholder="Masukan Email/Nomor Telepon Anda" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+        <label for="code" class="ml-[10px] mb-[10px] mt-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Kode Verifikasi</label>
+        <input type="text" id="code" required placeholder="Masukan Kode Verifikasi Anda" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+        <label for="password" class="ml-[10px] mb-[10px] mt-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Password Baru</label>
+        <input type="password" id="password" required placeholder="Masukan Password Baru Anda" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+        <label for="password" class="ml-[10px] mb-[10px] mt-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Konfirmasi Password Baru</label>
+        <input type="password" id="password" required placeholder="Konfirmasi Password Baru Anda" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+        <div class="flex flex-row items-center justify-center mt-[25px]">
+          <button type="submit" class="font-bold cursor-pointer bg-white text-[#191919] p-[5px] rounded-[15px] w-[250px] h-[45px] duration-300 ease-in-out hover:bg-[#DFDC29] active:bg-white" onclick=forgot()>Masuk</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+    <script src="../src/index.js"></script>
+</body>
+</html>

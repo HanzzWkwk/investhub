@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Verifikasi</title>
+    <link rel="icon" type="image/png" href="../assets/image.png" />
+</head>
+<body class="h-screen overflow-hidden bg-[#191919]">
+    <div class="flex flex-row cursor-pointer items-center justify-center gap-[10px] mt-[45px] mr-[1300px]" onclick="window.location.href= '../regist/regist.html'">
+      <i data-feather="arrow-left" class="text-white w-[40px] h-[40px]"></i>
+      <h2 class="text-white text-[20px] font-semibold text-center items-center justify-center align-middle">Kembali</h2>
+    </div>
+    <div class="flex flex-row justify-between align-middle items-center pl-[170px] pr-[170px] mt-[145px]">
+        <div>
+            <img src="../assets/image.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center">
+            <h2 class="text-white text-[25px] font-bold text-center">Verifikasi Email/Nomor Telepon</h2> <br>
+            <p class="text-white text-[13px] font-semibold mb-[15px]">Untuk memastikan kepemilikan email/nomor telepon anda, masukan kode OTP yang telah dikirim.</p>
+            <label for="username" class="ml-[10px] mb-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Kode OTP</label>
+            <input type="text" id="username" placeholder="Masukan Kode OTP Anda" required oninvalid="this.setCustomValidity('Kode OTP harus diisi')" oninput="this.setCustomValidity('')" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+            <button class="text-white/80 font-semibold text-end items-center align-middle mr-[40px] mt-[5px]">Kirim Ulang Kode OTP</button>
+            <button type="submit" class="font-bold cursor-pointer bg-white text-[#191919] p-[5px] rounded-[50px] w-[250px] h-[45px] duration-300 ease-in-out hover:bg-[#DFDC29] active:bg-white" onclick="window.location.href= '../home/home.html'">Verifikasi</button>
+        </div>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+    <script src="../src/index.js"></script>
+</body>
+</html>
