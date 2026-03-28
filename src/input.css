@@ -2,6 +2,16 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 /* choose one of the following */
 

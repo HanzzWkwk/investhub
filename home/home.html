@@ -10,21 +10,30 @@
 </head>
 <body class="bg-[#191919] h-screen overflow-hidden">
     <header> <!-- Header -->
-      <div id="indicator" class="absolute top-5 left-[28px] w-17 h-10 bg-[#DFDC29] rounded-xl -z-1 transition-all duration-300 ease-in-out"></div>
+      <div id="indicator" class="absolute top-3 left-[28px] w-17 h-10 bg-[#DFDC29] rounded-xl -z-1 transition-all duration-300 ease-in-out"></div>
       <nav> <!-- Navbar -->
-        <div class="relative flex justify-between border-b-2 border-b-white pl-[50px] pr-[50px] h-[80px]">
+        <div class="relative flex justify-between border-b-2 border-b-white pl-[50px] pr-[50px] h-[65px]">
           <div class="flex flex-row text-white align-middle justify-center items-center gap-[60px]">
-            <i data-feather="home" class="nav-item cursor-pointer text-[#191919] duration-300 ease-in-out"></i>
-            <i data-feather="shopping-cart" class="nav-item cursor-pointer duration-300 ease-in-out"></i>
-            <i data-feather="monitor" class="nav-item cursor-pointer duration-300 ease-in-out"></i>
-            <i data-feather="book" class="nav-item cursor-pointer duration-300 ease-in-out"></i>
+            <i data-feather="home" class="nav-item cursor-pointer text-[#191919] duration-300 ease-in-out" onclick=""></i>
+            <i data-feather="shopping-cart" class="nav-item cursor-pointer duration-300 ease-in-out" onclick=""></i>
+            <i data-feather="monitor" class="nav-item cursor-pointer duration-300 ease-in-out" onclick=""></i>
+            <i data-feather="book" class="nav-item cursor-pointer duration-300 ease-in-out" onclick=""></i>
           </div>
-          <div class="text-[#DFDC29] text-[35px] items-center justify-center text-center align-middle">
-            <h2 class="mt-[10px] font-bold absolute left-1/2 transform -translate-x-1/2">InvestHub</h2>
+          <div class="text-[#DFDC29] text-[33px] items-center justify-center text-center align-middle">
+            <h2 class="mt-[5.5px] font-bold absolute left-1/2 transform -translate-x-1/2">InvestHub</h2>
           </div>
           <div class="flex flex-row text-white items-center justify-center gap-[60px]">
-            <i data-feather="user" class="cursor-pointer"></i>
-            <i data-feather="bell" class="cursor-pointer"></i>
+            <div class="flex flex-row justify-center items-center align-middle border-white"> <!-- Profil -->
+              <div class="w-[63px] overflow-hidden border-white pr-[20px] border-[0px_2px_0px_0px]"> <!-- Foto Profil -->
+                <img src="../assets/profile.png" alt="Profil anda" class="w-full h-full object-cover rounded-full overflow-hidden">
+              </div>
+              <div class="flex flex-col items-start justify-center align-middle ml-[20px]"> <!-- Nama -->
+                <p class="text-white/50 text-[13px] font-medium text-start">Halo,</p>
+                <h2 class="text-white text-[18px] font-medium text-start">Pengguna</h2>
+              </div>
+            </div>
+            <i data-feather="edit" class="cursor-pointer" onclick=""></i>
+            <i data-feather="bell" class="cursor-pointer" onclick=""></i>
           </div>
         </div>
       </nav>
@@ -32,7 +41,7 @@
     <main class="h-screen overflow-hidden">
       <div class="flex flex-col"> <!-- Utama -->
         <div class="flex flex-row justify-between"> <!-- Pasar X Saldo -->
-          <div class="bg-[#DFDC29] ml-[5px] rounded-[10px] mt-[15px] pb-[15px]"> <!-- Pasar Background -->
+          <div class="bg-[#DFDC29] ml-[5px] rounded-[10px] mt-[7px] pb-[10px] w-[750px]"> <!-- Pasar Background -->
             <div class="flex flex-col pl-[40px] pr-[40px] pt-[5px]"> <!-- Pasar X Saham -->
               <div class="flex flex-row items-center justify-center align-middle"> <!-- Pasar -->
                 <h2 class="text-[#191919] font-bold text-[22px] text-center items-center justify-center align-middle">Pasar hari ini</h2>
@@ -40,9 +49,9 @@
               <div class="flex flex-row items-end justify-end align-middle mr-[6px] mb-[3px]"> <!-- Lihat selengkapnya -->
                 <h2 class="text-[#191919]/50 text-[18px] font-semibold text-end items-center justify-center align-middle cursor-pointer">Lihat selengkapnya</h2>
               </div>
-              <div class="flex flex-col gap-[10px]"> <!-- Saham Layout -->
-                <div class="flex flex-row gap-[20px]"> <!-- Card Saham Baris 1 -->
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+              <div class="flex flex-col gap-[10px] justify-center items-center align-middle"> <!-- Saham Layout -->
+                <div class="flex flex-row gap-[40px]"> <!-- Card Saham Baris 1 -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">NVIDIA</h2>
                     </div>
@@ -53,7 +62,7 @@
                       <h2 class="text-white text-[20px] font-semibold">+1,5%</h2>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">APPLE</h2>
                     </div>
@@ -64,7 +73,7 @@
                       <h2 class="text-white text-[20px] font-semibold">+1,5%</h2>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">VERTU</h2>
                     </div>
@@ -75,7 +84,7 @@
                       <h2 class="text-white text-[20px] font-semibold">+1,5%</h2>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">BMW</h2>
                     </div>
@@ -87,8 +96,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-row gap-[20px]"> <!-- Card Saham Baris 2 -->
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                <div class="flex flex-row gap-[40px]"> <!-- Card Saham Baris 2 -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">LENOVO</h2>
                     </div>
@@ -99,7 +108,7 @@
                       <h2 class="text-white text-[20px] font-semibold">+1,5%</h2>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">ASUS</h2>
                     </div>
@@ -110,7 +119,7 @@
                       <h2 class="text-white text-[20px] font-semibold">+1,5%</h2>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">SAMSUNG</h2>
                     </div>
@@ -121,7 +130,7 @@
                       <h2 class="text-white text-[20px] font-semibold">+1,5%</h2>
                     </div>
                   </div>
-                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[130px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
+                  <div class="flex flex-col gap-[20px] bg-[#191919] w-[140px] h-[170px] items-center justify-center align-middle text-center rounded-[10px]"> <!-- Card Saham -->
                     <div class="items-center justify-center align-middle">
                       <h2 class="text-white text-[20px] font-semibold">MICROSOFT</h2>
                     </div>
@@ -136,22 +145,195 @@
               </div>
             </div>
           </div>
-          <div> <!-- Saldo -->
-            <div>
-              
+          <div class="absolute left-[936px] top-[185px] bg-[#DFDC29] pl-[15px] pr-[15px] pb-[50px] rounded-[20px]"> <!-- Deposit Background -->
+            <h2 class="text-[#191919] text-[20px] font-semibold text-center items-center justify-center align-middle">Deposit anda saat ini</h2>
+          </div>
+          <div class="relative top-[150px] flex flex-col justify-center items-center align-middle mr-[160px] bg-[#DFDC29] w-[440px] h-[180px] rounded-[20px]"> <!-- Saldo Background -->
+            <div class="flex flex-row justify-between items-center align-middle bg-[#191919] w-[425px] h-[40px] pl-[20px] pr-[20px] rounded-[30px]"> <!-- Saldo, isi, tarik, histori transaksi -->
+              <div class="align-middle justify-center items-center"> <!-- Saldo -->
+                <h2 class="font-semibold text-center text-white">Rp. 1.000.000.000</h2>
+              </div>
+              <div class="flex flex-row gap-[10px]"> <!-- Fitur tambahan -->
+                <i data-feather="clock" class="text-white text-[20px] font-semibold cursor-pointer"></i> <!-- Histori Transaksi -->
+                <i data-feather="credit-card" class="text-white text-[20px] font-semibold cursor-pointer"></i> <!-- Tarik -->
+                <i data-feather="plus-circle" class="text-white text-[20px] font-semibold cursor-pointer"></i> <!-- Isi -->
+              </div>
+            </div>
+            <div class="flex flex-row justify-between align-middle items-center gap-[5px] mt-[10px]"> <!-- Total Laba & Total Rugi -->
+              <div class="flex flex-col justify-center align-middle items-center bg-[#191919] w-[210px] h-[110px] rounded-[15px]"> <!-- Total Laba -->
+                <h2 class="text-white text-[20px] font-semibold">Total Laba</h2>
+                <h2 class="text-green-500 text-[20px] font-semibold">+ Rp. 1.000.000</h2>
+              </div>
+              <div class="flex flex-col justify-center align-middle items-center bg-[#191919] w-[210px] h-[110px] rounded-[15px]"> <!-- Total Rugi -->
+                <h2 class="text-white text-[20px] font-semibold">Total Rugi</h2>
+                <h2 class="text-red-500 text-[20px] font-semibold">- Rp. 300.000</h2>
+              </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col justify-center items-center align-middle bg-[#DFDC29] ml-[5px] rounded-[10px] mt-[15px] pb-[15px]"> <!-- Saran -->
-          <div class="flex flex-col justify-between items-center align-middle">
-            <h2 class="text-[#191919] text-[22px] font-bold text-center items-center justify-center align-middle">Saran</h2>
-          </div>
-          <div class="flex flex-row items-end justify-end align-end"> <!-- Selengkapnya -->
-            <h2 class="text-[#191919]/50 text-[17px] font-semibold cursor-pointer">Lihat selengkapnya</h2>
+        <div class="bg-[#DFDC29] ml-[5px] mr-[5px] rounded-[10px] mt-[7px] pb-[5px]"> <!-- Saran Background -->
+          <div class="flex flex-col justify-center align-middle"> <!-- Saran Main -->
+            <div class="flex flex-col justify-center align-middle"> <!-- Judul Saran -->
+              <h2 class="text-[#191919] text-[22px] font-bold text-center items-center justify-center align-middle">Saran</h2>
+            </div>
+            <div class="flex flex-row items-end justify-end align-middle mr-[25px] mb-[3px]"> <!-- Selengkapnya -->
+              <h2 class="text-[#191919]/50 text-[17px] font-semibold text-end items-center justify-center align-middle cursor-pointer">Lihat selengkapnya</h2>
+            </div>
+            <div class="flex pr-[10px] gap-[10px] pl-[10px] overflow-x-auto no-scrollbar border-x-8 border-[#DFDC29] rounded-[15px]"> <!-- Saran -->
+              <div class="flex flex-col gap-2"> <!-- Layout isi Saran -->
+                <div class="flex flex-row gap-2"> <!-- Card Saran baris 1 -->
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Youtube</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 2.000.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Tiktok</h2>
+                  </div>
+                  <div>
+                    <h2 class="text-white text-[15px] font-semibold">IDR 800.000</h2>
+                  </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Instagram</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 500.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">X</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 250.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Facebook</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 100.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Telegram</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 50.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Yahoo</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 300.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Kahoot</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 150.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Meta</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 1.000.000</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-2"> <!-- Card Saran baris 2 -->
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Youtube</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 2.000.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Tiktok</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 800.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Instagram</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 500.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">X</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 250.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Facebook</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 100.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Telegram</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 50.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Yahoo</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 300.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Kahoot</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 150.000</h2>
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[20px] bg-[#191919] w-[210px] h-[55px] items-center justify-center align-middle text-center rounded-[10px] pl-[5px] pr-[5px]"> <!-- Card Saran -->
+                    <div class="">
+                      <h2 class="text-white text-[15px] font-semibold">Meta</h2>
+                    </div>
+                    <div>
+                      <h2 class="text-white text-[15px] font-semibold">IDR 1.000.000</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </main>
       <script>
         feather.replace();
