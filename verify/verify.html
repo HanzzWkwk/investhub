@@ -21,9 +21,9 @@
             <h2 class="text-white text-[25px] font-bold text-center">Verifikasi Email/Nomor Telepon</h2> <br>
             <p class="text-white text-[13px] font-semibold mb-[15px]">Untuk memastikan kepemilikan email/nomor telepon anda, masukan kode OTP yang telah dikirim.</p>
             <label for="username" class="ml-[10px] mb-[10px] text-white text-[15px] font-semibold text-left items-center justify-center align-middle">Kode OTP</label>
-            <input type="text" id="username" placeholder="Masukan Kode OTP Anda" required oninvalid="this.setCustomValidity('Kode OTP harus diisi')" oninput="this.setCustomValidity('')" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
+            <input type="text" id="code" placeholder="Masukan Kode OTP Anda" required oninvalid="this.setCustomValidity('Kode OTP harus diisi')" oninput="this.setCustomValidity('')" class="h-[50px] w-[550px] text-[#191919] text-[15px] font-semibold text-left items-center justify-center align-middle rounded-[15px]">
             <button class="text-white/80 font-semibold text-end items-center align-middle mr-[40px] mt-[5px]">Kirim Ulang Kode OTP</button>
-            <button type="submit" class="font-bold cursor-pointer bg-white text-[#191919] p-[5px] rounded-[50px] w-[250px] h-[45px] duration-300 ease-in-out hover:bg-[#DFDC29] active:bg-white" onclick="window.location.href= '../home/home.html'">Verifikasi</button>
+            <button type="submit" class="font-bold cursor-pointer bg-white text-[#191919] p-[5px] rounded-[50px] w-[250px] h-[45px] duration-300 ease-in-out hover:bg-[#DFDC29] active:bg-white" onclick="verify()">Verifikasi</button>
         </div>
     </div>
     <script>

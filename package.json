@@ -13,6 +13,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "feather-icons": "^4.29.2",
+    "firebase": "^12.11.0",
     "flowbite": "^4.0.1",
     "tailwind-scrollbar-hide": "^4.0.0",
     "tailwindcss": "^4.2.1",

@@ -35,13 +35,17 @@ function login() {
 function forgot() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
+  const newpass = document.getElementById("newpass").value;
   if (email === "") {
     alert("Email tidak boleh kosong");
   } else if (password === "") {
     alert("Password tidak boleh kosong");
   } else if (password.length < 6) {
     alert("Password minimal 6 karakter");
-  } else {
+  } else if ( newpass !== password ) {
+    alert("Password baru dan konfirmasi password baru tidak cocok")
+  }
+   else {
     window.location.href = "../login/login.html";
   }
 }
@@ -67,6 +71,6 @@ function verify() {
   } else if (code.length !== 7) {
     alert("Kode verifikasi tidak ditemukan")
   } else {
-    window.location.href = "../home/home.html"
+    window.location.href = "../page/home.html"
   }
 }
