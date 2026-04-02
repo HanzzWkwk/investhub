@@ -1,5 +1,5 @@
 function start() {
-  window.location.href = "../lobby/lobby.html";
+  window.location.href = "./lobby.html";
 }
 
 // Animasi Navbar
@@ -27,7 +27,7 @@ function login() {
   if (username === "" || password === "") {
     alert("Username atau password tidak boleh kosong");
   } else {
-    window.location.href = "../home/home.html";
+    window.location.href = "./home.html";
   }
 }
 
@@ -46,7 +46,7 @@ function forgot() {
     alert("Password baru dan konfirmasi password baru tidak cocok")
   }
    else {
-    window.location.href = "../login/login.html";
+    window.location.href = "./login.html";
   }
 }
 
@@ -59,7 +59,7 @@ function regist() {
   } else if (pass.length < 6) {
     alert("Password minimal 6 karakter")
   } else {
-    window.location.href = "../verify/verify.html"
+    window.location.href = "./verify.html"
   }
 }
 
@@ -71,6 +71,6 @@ function verify() {
   } else if (code.length !== 7) {
     alert("Kode verifikasi tidak ditemukan")
   } else {
-    window.location.href = "../page/home.html"
+    window.location.href = "./home.html"
   }
 }
