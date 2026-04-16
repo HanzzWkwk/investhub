@@ -1,7 +1,3 @@
-function start() {
-  window.location.href = "./lobby.html";
-}
-
 // Animasi Navbar
 const items = document.querySelectorAll(".nav-item");
 const indicator = document.getElementById("indicator");

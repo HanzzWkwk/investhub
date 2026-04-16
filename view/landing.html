@@ -1,39 +1,155 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="../assets/image.png" />
+    <link rel="icon" type="image/png" href="../assets/image.png"  />
     <title>InvestHub</title>
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body class="bg-[#191919]">
-    <div class="flex flex-row ml-[220px] mr-[100px] mt-[190px]">
-      <div class="">
-        <img class="max-w-[800px] mt-[26px]" src="../assets/image.png" />
-      </div>
-      <div
-        class="flex flex-col items-center justify-center ml-[100px] mr-[200px] text-white gap-[50px]"
-      >
-        <div>
-          <h1 class="text-[40px] font-bold text-[#DFDC29]">InvestHub</h1>
+  <body class="bg-[#191919] scroll-smooth overflow-x-auto no-scrollbar">
+    <header class="z-300 relative"> <!-- Header -->
+      <nav class="z-300 fixed w-screen bg-[#191919]"> <!-- Navbar -->
+        <div class="z-300 relative flex justify-between border-b-2 border-b-white pl-[30px] pr-[30px] h-[65px]">
+          <div class="flex flex-row text-white align-middle justify-center items-center gap-[30px]">
+            <img src="../assets/image.png" alt="" class="w-[40px]">
+            <h2 class="font-bold text-[#DFDC29] text-[20px]">InvestHub</h2>
+          </div>
+          <div class="text-white text-[16px] items-center text-center align-middle mt-[20px]">
+            <a href="#" class="cursor-pointer hover:text-[#DFDC29] duration-300 ease-in-out active:text-white ml-[25px] mr-[25px]">Beranda</a>
+            <a href="#about" class="cursor-pointer hover:text-[#DFDC29] duration-300 ease-in-out active:text-white ml-[25px] mr-[25px]">Tentang</a>
+            <a href="#work" class="cursor-pointer hover:text-[#DFDC29] duration-300 ease-in-out active:text-white ml-[25px] mr-[25px]">Cara kerja</a>
+            <a href="#community" class="cursor-pointer hover:text-[#DFDC29] duration-300 ease-in-out active:text-white ml-[25px] mr-[25px]">Komunitas</a>
+            <a href="#message" class="cursor-pointer hover:text-[#DFDC29] duration-300 ease-in-out active:text-white ml-[25px] mr-[25px]">Kontak</a>
+          </div>
         </div>
-        <div>
-          <p class="text-justify font-bold text-[17px]">
-            InvestHub adalah aplikasi investasi yang dilengkapi dengan fitur
-            edukasi khusus pemula. Aplikasi ini juga memiliki desain UI yang
-            mudah dikuasai oleh pemula dan menampilkan semua biaya yang jelas.
-            Aplikasi ini sudah diawasi oleh OJK dan cocok untuk anda yang baru
-            berinvestasi
-          </p>
+      </nav>
+    </header>
+    <main> <!-- Utama -->
+      <section id="home" class="align-middle justify-center items-center flex flex-col gap-[10px] bg-linear-to-b from-[#DFDC29] to-[#191919] h-[115vh]"> <!-- top -->
+        <h1 class="text-white mt-[-60px] text-[35px] font-normal text-center"><span class="text-[#DFDC29]">Investasi</span> mudah untuk semua,<br>bahkan jika anda baru memulai</h1>
+        <p class="text-white text-[14px] font-normal text-center w-[600px]">InvestHub adalah aplikasi investasi yang dilengkapi dengan fitur edukasi khusus<br>pemula. Memiliki desain UI yang mudah dikuasai oleh pemula dan menampilkan<br>semua biaya yang transparan.</p>
+        <button class="flex justify-center text-center mt-[50px] items-center gap-[20px] bg-black text-white font-semibold text-[14px] w-[170px] h-[40px] rounded-[30px] cursor-pointer duration-300 ease-in-out hover:text-black hover:bg-white active:bg-[#191919] active:text-white" onclick="window.location.href='./login.html'">Mulai<i data-feather="arrow-up-right"></i></button>
+      </section>
+      <div id="about" class="mt-[10px] absolute top-[530px] text-white/0"><p>about</p></div> <!-- about -->
+      <section class="-z-40"> <!-- about -->  
+        <div class="bg-[#DFDC29]/40 flex flex-row justify-center items-center ml-[9%] mr-[9%] mt-[50px] translate-y-[-120px] gap-[180px] h-[350px] rounded-[20px]">
+          <div>
+            <img src="../assets/about.png" alt="" class="w-[230px] rounded-[50%]">
+          </div>
+          <div>
+            <h2 class="text-[#DFDC29] text-[25px] font-bold">Tentang InvestHub</h2> <br>
+            <p class="text-white text-[17px] font-semibold">InvestHub didirikan untuk membantu masyarakat, khususnya pemula, memulai investasi<br>dengan lebih mudah dan aman. Berangkat dari kebutuhan akan edukasi investasi yang<br>sederhana dan transparan, InvestHub menghadirkan platform yangmenggabungkan<br>pembelajaran, kemudahan penggunaan, dan sistem investasi yangterpercaya dalam satu<br>aplikasi.</p>
+          </div>
         </div>
-        <div
-          class="flex items-center justify-center bg-[#ffffff] text-black rounded-[20px] font-bold duration-300 hover:bg-[#DFDC29] hover:-translate-y-2 active:translate-y-0 active:bg-white"
-        >
-          <button class="cursor-pointer pl-[80px] pr-[80px] pt-[10px] pb-[10px]" onclick=start()>Mulai</button>
+      </section>
+      <div id="work" class="mt-[10px] absolute top-[1155px] text-white/0"><p>work</p></div> <!-- work -->
+      <section> <!-- cara kerja -->
+        <div class="flex justify-center text-center align-middle gap-[4px] mt-[30px]">
+          <h2 class="text-white text-[20px] font-semibold">Cara kerja <span class="text-[#DFDC29] font-semibold text-[20px]"> InvestHub</span></h2>
         </div>
-      </div>
-    </div>
+        <div class="flex flex-col justify-center items-center gap-[60px] mt-[60px]"> <!-- layout cara kerja -->
+          <div class="flex flex-row gap-[150px]"> <!-- baris card 1-->
+            <div class="bg-[#DFDC29]/40 w-[300px] h-[300px] flex flex-col justify-center items-center rounded-[10px]"> <!-- card 1 -->
+              <div class="flex flex-row gap-[50px] justify-center items-center text-start">
+                <img src="../assets/akun.png" alt="" class="w-[90px] rounded-full">
+                <h2 class="text-white text-[17px] font-semibold">Membuat<br>akun dengan<br>mudah</h2>
+              </div>
+              <div class="w-[300px] h-[2px] bg-[#191919] mt-[30px] mb-[30px]">
+                <hr>
+              </div>
+              <div class="">
+                <p class="text-white text-[17px] font-normal text-center">Akun baru akan mendapatkan<br>Diskon dan perlindungan saat anda<br>pertama kali melakukan investasi</p>
+              </div>
+            </div>
+            <div class="bg-[#DFDC29]/40 w-[300px] h-[300px] flex flex-col justify-center items-center rounded-[10px]"> <!-- card 2 -->
+              <div class="flex flex-row gap-[50px] justify-center items-center text-start">
+                <img src="../assets/pelajari.png" alt="" class="w-[90px] rounded-full">
+                <h2 class="text-white text-[17px] font-semibold">Pelajari dasar</h2>
+              </div>
+              <div class="w-[300px] h-[2px] bg-[#191919] mt-[30px] mb-[30px]">
+                <hr>
+              </div>
+              <div class="">
+                <p class="text-white text-[17px] font-normal text-center">Akses fitur Edukasi membantu anda<br>pertama kali Investasi pada aplikasi<br>investhub, dengan artikel dan<br>Analisis pasar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row gap-[150px]"> <!-- baris card 2-->
+            <div class="bg-[#DFDC29]/40 w-[300px] h-[300px] flex flex-col justify-center items-center rounded-[10px]"> <!-- card 3 -->
+              <div class="flex flex-row gap-[50px] justify-center items-center text-start">
+                <img src="../assets/choose.png" alt="" class="w-[90px] rounded-full">
+                <h2 class="text-white text-[17px] font-semibold">Tentukan<br>pilihan anda</h2>
+              </div>
+              <div class="w-[300px] h-[2px] bg-[#191919] mt-[30px] mb-[30px]">
+                <hr>
+              </div>
+              <div class="">
+                <p class="text-white text-[17px] font-normal text-center">Pilih saham,mata uang atau emas<br>untuk melakukan investasi anda.</p>
+              </div>
+            </div>
+            <div class="bg-[#DFDC29]/40 w-[300px] h-[300px] flex flex-col justify-center items-center rounded-[10px]"> <!-- card 4 -->
+              <div class="flex flex-row gap-[10px] justify-center items-center text-start">
+                <img src="../assets/monitor.png" alt="" class="w-[90px] rounded-full">
+                <h2 class="text-white text-[17px] font-semibold">Kelola Investasi anda</h2>
+              </div>
+              <div class="w-[300px] h-[2px] bg-[#191919] mt-[30px] mb-[30px]">
+                <hr>
+              </div>
+              <div class="">
+                <p class="text-white text-[17px] font-normal text-center">Pantau performa investasi Anda<br>kapan saja dengan dashboard yang<br>praktis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="community" class="mt-[10px] absolute top-[2050px] text-white/0"><p>community</p></div> <!-- community -->
+      <section> <!-- community -->
+        <h2 class="text-white text-center text-[25px] font-semibold mt-[120px]">Gabung komunitas investasi <span class="text-[#DFDC29]">InvestHub</span></h2>
+        <p class="text-white text-center text-[15px] font-normal">Tentukan Komunitas yang paling cocok untuk perjalanan investasi anda.</p>
+        <div class="flex flex-row gap-[265px] justify-center items-center mt-[80px] bg-[#DFDC29]/40 ml-[8%] mr-[8%] h-[500px] rounded-[10px]"> <!-- background komunitas -->
+          <div class="bg-white w-[490px] h-[470px] flex flex-col gap-[15px] justify-center items-center rounded-[10px]"> <!-- komunitas 1 -->
+            <img src="../assets/kom1.png" alt="" class="w-[300px] rounded-[10px]">
+            <h2 class="text-[#191919] text-[20px] font-bold">Komunitas Stockbit:</h2>
+            <p class="text-[#191919] text-[17px] font-normal text-start">Tempat terbaik bagi pemula untuk belajar dari<br>pengalaman investor profesional. Cari tahu saham<br>apa yang sedang ramai dibicarakan dan bangun<br>portofolio cerdas anda hari ini.</p>
+            <button class="bg-[#191919] text-white text-[17px] font-normal w-[230px] h-[45px] rounded-full hover:bg-[#DFDC29] hover:text-[#191919] active:bg-[#191919] active:text-white transition-all duration-300 ease-in-out">Pelajari selengkapnya</button>
+          </div>
+          <div class="bg-white w-[490px] h-[470px] flex flex-col gap-[15px] justify-center items-center rounded-[10px]"> <!-- komunitas 2 -->
+            <img src="../assets/kom2.png" alt="" class="w-[300px] rounded-[10px]">
+            <h2 class="text-[#191919] text-[20px] font-bold">Komunitas 2</h2>
+            <p class="text-[#191919] text-[17px] font-normal text-start">Tempat terbaik bagi pemula untuk belajar dari<br>pengalaman investor profesional. Cari tahu saham<br>apa yang sedang ramai dibicarakan dan bangun<br>portofolio cerdas anda hari ini.</p>
+            <button class="bg-[#191919] text-white text-[17px] font-normal w-[230px] h-[45px] rounded-full hover:bg-[#DFDC29] hover:text-[#191919] active:bg-[#191919] active:text-white transition-all duration-300 ease-in-out">Pelajari selengkapnya</button>
+          </div>
+        </div>
+      </section>
+      <div id="message" class="mt-[10px] absolute top-[2810px] text-white"><p>message</p></div> <!-- message -->
+      <section>
+        <div class="relative items-center -left-[20px] justify-center align-middle mt-[170px] bg-[#DFDC29]/40 mr-[17%] h-[550px] rounded-[10px]">
+          <h2 class="text-white text-center text-[35px] font-normal pt-[20px]">Hubungi kami</h2>
+          <div class="flex flex-row justify-center align-middle items-center gap-[160px] pt-[30px]">
+            <div> <!-- foto -->
+              <img src="../assets/message.png" alt="" class="w-[400px]">
+            </div>
+            <div class="flex flex-row"> <!-- form -->
+              <form action="" class="flex flex-col gap-[5px]">
+                <input type="text" placeholder="Nama" class="w-[600px] h-[45px] rounded-[15px] pl-[15px] text-white text-[17px] font-normal bg-white/70 border-none">
+                <input type="email" placeholder="Email" class="w-[600px] h-[45px] rounded-[15px] pl-[15px] text-white text-[17px] font-normal bg-white/70 border-none">
+                <input type="number" placeholder="Nomor Telepon" class="w-[600px] h-[45px] rounded-[15px] pl-[15px] text-white text-[17px] font-normal bg-white/70 border-none">
+                <textarea name="" id="" placeholder="Pesan" class="w-[600px] h-[190px] rounded-[15px] pl-[15px] text-white text-[17px] font-normal bg-white/70 border-none"></textarea>
+                <button type="submit" class="bg-[#191919] text-white text-[17px] font-semibold w-[600px] h-[45px] rounded-full hover:bg-white hover:text-[#191919] active:bg-[#191919] active:text-white transition-all duration-300 ease-in-out">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        
+      </section>
+    </main>
+    <script>
+      feather.replace();
+    </script>
     <script src="../src/index.js"></script>
   </body>
 </html>
